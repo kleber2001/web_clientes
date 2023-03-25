@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 
 //motor de plantilla
-
+app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended:false}));

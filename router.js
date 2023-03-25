@@ -8,7 +8,7 @@ router.get('/', (req,res) => {
         if(error){
             throw error;
         }else{
-            res.render('index.ejs',{results:results});
+            res.render('index',{results:results});
         }
     })
 });
@@ -23,7 +23,7 @@ router.get('/edit/:id', (req,res) =>{
         if(error){
             throw error;
         }else{
-            res.render('edit.ejs',{user:results[0]});
+            res.render('edit',{user:results[0]});
         }
     })
 })
